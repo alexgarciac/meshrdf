@@ -483,8 +483,8 @@
         <ObjectProperty IRI="term"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="broader"/>
         <ObjectProperty IRI="narrower"/>
+        <ObjectProperty IRI="broader"/>
     </InverseObjectProperties>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="broaderTransitive"/>
@@ -507,7 +507,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>AllowedDescriptorQualifierPair</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A combined MeSH descriptor and qualifier, where the pairing is allowed by MeSH rules. These URIs are a mash up of the descriptor and qualifier identifiers, such as D000236Q000235.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A combined MeSH descriptor and qualifier, where the pairing is allowed by MeSH rules. These URIs are a mash up of the descriptor and qualifier identifiers (such as D000236Q000235).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -517,7 +517,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>CheckTag</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A special class of descriptor singled out because they are so frequently applied to biomedical literature. There are only 2 Descriptors that are members of the class meshv:CheckTag: D005260 (Male) and D008297 (Female). These two Descriptors do not have tree numbers. </Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A special class of descriptor singled out because they are so frequently applied to biomedical literature. There are only 2 Descriptors that are members of the class meshv:CheckTag - D005260 (&apos;Male&apos;) and D008297 (&apos;Female&apos;). These two Descriptors do not have tree numbers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -527,7 +527,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>Concept</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">MeSH concepts are meanings. Many MeSH concepts contain synonymous terms. meshv:Concept identifiers begin with ‘M’ such as M0000013 (Congenital Abnormalities).</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MeSH concepts are meanings. Many MeSH concepts contain synonymous terms. meshv:Concept identifiers begin with &apos;M&apos; such as M000001 (&apos;Congenital Abnormalities&apos;)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -547,7 +547,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>DescriptorQualifierPair</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A combined MeSH descriptor and qualifier pair. Allowed pairs belong to the class meshv:AllowedDescriptorQualifierPair. Disallowed pairs belong to the class meshv:DisallowedDescriptorQualifierPair.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A combined MeSH descriptor and qualifier pair. Allowed pairs (according to MeSH rules) belong to the class meshv:AllowedDescriptorQualifierPair. Disallowed pairs belong to the class meshv:DisallowedDescriptorQualifierPair.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -557,7 +557,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>DisallowedDescriptorQualifierPair</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A combined MeSH descriptor and qualifier where the pairing is not allowed by MeSH rules, such as Abdomen/radiography.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A combined MeSH descriptor and qualifier where the pairing is not allowed by MeSH rules, such as ‘Abdomen/radiography’.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -567,7 +567,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>GeographicalDescriptor</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A descriptor that references places or regions of the world, such as D001061 (Appalachian Region).</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A descriptor that references places or regions of the world, such as D001061 (&apos;Appalachian Region&apos;).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -587,7 +587,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>Qualifier</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Also known as MeSH Subheadings, these provide context to the use of a MeSH Heading.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Also known as Subheadings, these provide context to the use of a MeSH Heading, such as &apos;heart/drug effects&apos;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -627,7 +627,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>SemanticType</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A semantic type provides broad categorization for meshv:Concept classes, such as Disease or Syndrome, Medical Device, etc.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A semantic type provides broad categorization for meshv:Concept classes, such as &apos;Disease or Syndrome&apos;, &apos;Medical Device&apos;, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -657,7 +657,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>TopicalDescriptor</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Topical Descriptors indicate the subject of an indexed item such as a journal article. See D063926 (Drug Hypersensitivity Syndrome) for an example.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Topical Descriptors indicate the subject of an indexed item such as a journal article. See D063926 (&apos;Drug Hypersensitivity Syndrome&apos;) for an example.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -763,5 +763,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
