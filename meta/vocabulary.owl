@@ -128,9 +128,6 @@
         <ObjectProperty IRI="seeAlso"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="semanticType"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="term"/>
     </Declaration>
     <Declaration>
@@ -640,8 +637,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>allowableQualifier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relates Descriptors to Qualifiers. A specific Qualifier allowed in combination with the Descriptor. DUI D000667 example: Q000627</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>allowedTreeNode</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Name of a subcategory in the MeSH Trees indicating, that for most Descriptors in that subcategory, the allowed Qualifiers on the Descriptor include the Qualifier. This value does not impact Descriptors permitted with a given Qualifier, but is a statistical summary of Descriptors permitted with the Qualifier.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A property of Qualifiers. A Qualifier may generally be used with the Descriptors in a given TreeNumber subcategory (for example, D01) but there may be exceptions. QUI Q000008 example: D01.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
