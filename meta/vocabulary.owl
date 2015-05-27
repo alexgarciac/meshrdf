@@ -59,9 +59,6 @@
         <Class IRI="SCR_Protocol"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SemanticType"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SupplementaryConceptRecord"/>
     </Declaration>
     <Declaration>
@@ -287,10 +284,6 @@
         <Class IRI="SupplementaryConceptRecord"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="SemanticType"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="SupplementaryConceptRecord"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
@@ -340,10 +333,6 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="Concept"/>
-        <Class IRI="SemanticType"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="Concept"/>
         <Class IRI="SupplementaryConceptRecord"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -364,10 +353,6 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="Descriptor"/>
-        <Class IRI="SemanticType"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="Descriptor"/>
         <Class IRI="SupplementaryConceptRecord"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -381,10 +366,6 @@
     <DisjointClasses>
         <Class IRI="DescriptorQualifierPair"/>
         <Class IRI="Qualifier"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="DescriptorQualifierPair"/>
-        <Class IRI="SemanticType"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="DescriptorQualifierPair"/>
@@ -412,10 +393,6 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="Qualifier"/>
-        <Class IRI="SemanticType"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="Qualifier"/>
         <Class IRI="SupplementaryConceptRecord"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -437,18 +414,6 @@
     <DisjointClasses>
         <Class IRI="SCR_Disease"/>
         <Class IRI="SCR_Protocol"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="SemanticType"/>
-        <Class IRI="SupplementaryConceptRecord"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="SemanticType"/>
-        <Class IRI="Term"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="SemanticType"/>
-        <Class IRI="TreeNumber"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="SupplementaryConceptRecord"/>
@@ -483,8 +448,8 @@
         <ObjectProperty IRI="term"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="narrower"/>
         <ObjectProperty IRI="broader"/>
+        <ObjectProperty IRI="narrower"/>
     </InverseObjectProperties>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="broaderTransitive"/>
@@ -617,22 +582,12 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>SCR_Protocol</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">MeSH protocols are therapies in the domain of cancer treatment</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MeSH protocols are therapies in the domain of cancer treatment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>SCR_Protocol</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">MeSH SCR Protocol</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <IRI>SemanticType</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A semantic type provides broad categorization for meshv:Concept classes, such as &apos;Disease or Syndrome&apos;, &apos;Medical Device&apos;, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>SemanticType</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">MeSH SemanticType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
@@ -647,7 +602,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>Term</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">MeSH terms provide synonymous names for MeSH concepts. Terms have T identifiers, and are considered either preferred or lexical variants.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MeSH terms provide synonymous names for MeSH concepts. Terms have T identifiers, and are considered either preferred or lexical variants, such as &apos;Congenital Abnormalities&apos; and &apos;Abnormailty, Congenital&apos;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -667,7 +622,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <IRI>TreeNumber</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Tree Numbers are used to organize MeSH Descriptors in a broader-than/narrower-than manner.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tree Numbers are used to organize MeSH Descriptors in a broader-than/narrower-than manner. For example, every Descriptor treed under C04, or &apos;Neoplasms&apos;, would be about something more specific than &apos;Neoplasms&apos;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -675,6 +630,10 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">MeSH TreeNumber</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&xsd;string">A property of Terms. Two-letter, uppercase abbreviation for a Qualifier term.  For example Q000235 (&apos;genetics&apos;) has the abbreviation &apos;GE&apos;.</Literal>
+        </Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>abbreviation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">abbreviation</Literal>
