@@ -19,14 +19,14 @@ MeSH RDF will follow established versioning practices, but MeSH RDF will be expr
 * http://id.nlm.nih.gov/mesh/D015242 (current)
 * http://id.nlm.nih.gov/mesh/2015/D015242 (2015)
 
-The non-versioned URI reflects the current state of MeSH at any given time. The versioned URI for the current year will mirror the non-versioned URI until the next year's MeSH data is released in the Fall. At some point, the next year's versioned URI will mirror the non-versioned URI, and the current year's URI will become static and archived. NLM will retain no more than three years of versioned URIs, and NLM will not produce versioned URIs for data prior to 2015. 
+The non-versioned URI reflects the current state of MeSH at any given time. The versioned URI for the current year will mirror the non-versioned URI. When the next year's MeSH data is released in the Fall, then that year's versioned URI will begin to mirror the non-versioned URI, and the current year's URI will become static and archived. NLM will retain no more than three years of versioned URIs, and NLM will not produce versioned URIs for data prior to 2015. 
 
 #### Vocabulary URIs
 
-MeSH RDF vocabulary URIs will be versionless, though they will be derived from versioned schema files (see below). All predicate and class URIs will have the following prefix, regardless of MeSH year or schema version: http://id.nlm.nih.gov/mesh/vocab#. Predicate names are expressed in camel case. Class names are capitalized.
+MeSH RDF vocabulary URIs will be versionless, though they will be derived from versioned schema files (see below). All predicate and class URIs will have the following prefix, regardless of MeSH year or schema version: http://id.nlm.nih.gov/mesh/vocab#. Resource names are in camel case, with class names having the first letter capitalized, and predicate names having the first letter in lowercase. For example,
 
-* Predicate example: http://id.nlm.nih.gov/mesh/vocab#pharmacologicalAction
-* Class example: http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor
+* Predicate: http://id.nlm.nih.gov/mesh/vocab#pharmacologicalAction
+* Class: http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor
 
 #### Deprecated URIs
 
@@ -76,7 +76,9 @@ Current MeSH RDF data is available for download in .nt (N-Triples format).
 * Filename: mesh.nt 
 * Location: ftp://ftp.nlm.nih.gov/online/mesh/
 
-MeSH XML is also available. Versioned MeSH data is available in subdirectories labeled by year. 
+MeSH XML is also available. 
+
+Versioned MeSH data is available in subdirectories labeled by year. 
 
 * Filename: mesh2015.nt 
 * Location: ftp://ftp.nlm.nih.gov/online/mesh/2015/
